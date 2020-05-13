@@ -32,7 +32,7 @@
 							<td th:text="${user.name}"></td>
 							<td th:text="${user.email}"></td>
 
-							<td><a href="" class="btn btn-dark">Add</a></td>
+							<td><a th:href="@{/addTask(email=${user.email})}" class="btn btn-dark">Add</a></td>
 						</tr>
 					</tbody>
 				</table>
